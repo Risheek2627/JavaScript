@@ -35,6 +35,12 @@ let nwml = mul.map((x) => {
 console.log("map");
 console.log(nwml);
 
+// * ---------------- easy method ------------------
+let r = [1, 2, 3, 4, 5, 6, 7, 8];
+let o = r.filter((x) => x % 2 == 0);
+console.log(o);
+
+// ? ------------------------------------------------
 {
   let mul = [1, 2, 3, 4, 5];
   let nwml = mul.filter((x) => {
@@ -56,8 +62,23 @@ console.log(nwml);
 // todo  ------- Reduce --------
 
 let re = [1, 2, 3, 4];
-
 const out = re.reduce((res, curr) => {
-  return curr;
+  return res + curr;
 });
-console.log(out);
+console.log("\n");
+console.log("Reduce : " + out);
+
+// todo ------- easy method ----------
+const arr1 = [1, 2, 3, 4, 5];
+let out1 = arr1.reduce((accum, curr) => accum + curr);
+console.log("Sum : " + out1);
+
+// todo find maximum (reduce)
+const max = [1, 6, 3, 78, 12, 89];
+const output = max.reduce((res, curr) => (curr > res ? curr : res));
+console.log("Maximum : " + output);
+
+// todo ------- mean (Average) ---------
+let avg = [1, 2, 3, 4, 5];
+let o1 = avg.reduce((res, curr) => res + curr) / avg.length;
+console.log("Mean : " + o1);
