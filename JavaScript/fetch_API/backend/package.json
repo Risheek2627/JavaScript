@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Creating api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "api",
+    "backend"
+  ],
+  "author": "Risheek",
+  "license": "ISC"
+}
